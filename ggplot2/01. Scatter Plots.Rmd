@@ -6,13 +6,9 @@ We'll be using the `diamonds` dataset that comes with `ggplot2`.
 ```{r,'Basic Data Summary'}
 
 library(ggplot2)
-
 diamonds<-diamonds
-
 summary(diamonds)
-
 colnames(diamonds)
-
 nrow(diamonds)
 data=diamonds[sample(1:nrow(diamonds),2000),]
 ```
