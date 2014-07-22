@@ -20,3 +20,9 @@ b. Adding Colour,Shape & Size aesthetics
 a. Basic Line Plots
 
 b. Adding Colour,alpha,linetype,size
+
+##### 3. Bar, Histogram & Density plots#####
+
+a. Basic distribution Plots
+
+b. Adding Colour,alpha,fill & other modifications
