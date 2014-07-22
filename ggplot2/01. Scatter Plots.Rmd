@@ -1,0 +1,29 @@
+Basic Scatter Plot (*Nothing Fancy*)
+====================================
+
+We'll be using the `diamonds` dataset that comes with `ggplot2`.
+
+```{r,'Basic Data Summary'}
+
+library(ggplot2)
+
+diamonds<-diamonds
+
+summary(diamonds)
+
+colnames(diamonds)
+
+nrow(diamonds)
+data=diamonds[sample(1:nrow(diamonds),2000),]
+```
+
+Plot 01
+-------
+```{r,fig.width=10,fig.height=10,'Basic Scatter Plot'}
+
+p1=ggplot(data)+
+  geom_point(aes(y=price,x=carat))+
+  ggtitle('Basic scatter plot on diamonds dataset: Price vs Carats')
+p1
+
+```

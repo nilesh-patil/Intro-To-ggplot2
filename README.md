@@ -9,14 +9,14 @@ I'll try to move forward in *plot-focused* path for this tutorial.
 
 ##ggplot2##
 
-##### Scatter Plots #####
+##### 1. Scatter Plots #####
 
 a. Basic Scatter Plot
 
 b. Adding Colour,Shape & Size aesthetics
 
-##### Line Charts #####
+##### 2. Line Charts #####
 
-a. Line Plots
+a. Basic Line Plots
 
-b. Adding Colour 
+b. Adding Colour,alpha,linetype,size
