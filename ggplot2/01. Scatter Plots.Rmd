@@ -1,5 +1,5 @@
-Basic Scatter Plot (*Nothing Fancy*)
-====================================
+Basic Scatter Plot (*Nothing Very Fancy - yet*)
+===============================================
 
 We'll be using the `diamonds` dataset that comes with `ggplot2`.
 

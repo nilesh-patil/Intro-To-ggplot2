@@ -11,18 +11,18 @@ I'll try to move forward in *plot-focused* path for this tutorial.
 
 ##### 1. Scatter Plots #####
 
-a. Basic Scatter Plot
+    a. Basic Scatter Plot
 
-b. Adding Colour,Shape & Size aesthetics
+    b. Adding Colour,Shape & Size aesthetics
 
 ##### 2. Line Charts #####
 
-a. Basic Line Plots
+    a. Basic Line Plots
 
-b. Adding Colour,alpha,linetype,size
+    b. Adding Colour,alpha,linetype,size
 
 ##### 3. Bar, Histogram & Density plots#####
 
-a. Basic distribution Plots
+    a. Basic distribution Plots
 
-b. Adding Colour,alpha,fill & other modifications
+    b. Adding Colour,alpha,fill & other modifications

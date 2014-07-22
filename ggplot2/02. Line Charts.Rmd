@@ -1,0 +1,18 @@
+Basic Line Charts (*Nothing Very Fancy - yet*)
+===============================================
+
+We'll be using the `diamonds` dataset that comes with `ggplot2`.
+
+###Basic Data Summary###
+```{r,'Basic Data Summary',R.options=list(width=160)}
+
+require(ggplot2)
+require(gridExtra)
+diamonds<-diamonds
+summary(diamonds)
+colnames(diamonds)
+nrow(diamonds)
+
+set.seed(56)
+data=diamonds[sample(1:nrow(diamonds),1000),]
+```
