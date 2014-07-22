@@ -34,7 +34,7 @@ p1
 
 ####Plot 02####
 
-```{r,fig.width=13,fig.height=13,'Scatter Plot: Color added'}
+```{r,fig.width=13,fig.height=13,'Scatter Plot-Color added'}
 
 p2=ggplot(data)+
   geom_point(aes(y=price,x=carat,color=cut))+
@@ -46,7 +46,7 @@ p2
 
 ####Plot 03####
 
-```{r,fig.width=13,fig.height=13,'Scatter Plot: Shape added'}
+```{r,fig.width=13,fig.height=13,'Scatter Plot-Shape added'}
 p3=ggplot(data)+
   geom_point(aes(y=price,x=carat,color=cut,shape=cut))+
   ggtitle('p3: Scatter plot with colour & Shape parameters')
@@ -57,7 +57,7 @@ p3
 
 ####Plot 04####
 
-```{r,fig.width=13,fig.height=13,'Scatter Plot: Size added'}
+```{r,fig.width=13,fig.height=13,'Scatter Plot-Size added'}
 
 p4=ggplot(data)+
   geom_point(aes(y=price,x=carat,color=cut,size=depth))+
