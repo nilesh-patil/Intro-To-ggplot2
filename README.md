@@ -7,4 +7,11 @@ I'll try to move forward in *plot-focused* path for this tutorial.
 
 #Chapter 1#
 ##ggplot2##
-+Scatter Plots
+
+* Scatter Plots
+a. Basic Scatter Plot
+b. Adding Colour,Shape & Size aesthetics
+
+* Line Charts
+a. Line Plots
+b. Adding Colour 
