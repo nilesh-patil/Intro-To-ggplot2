@@ -5,21 +5,71 @@ We'll be using the `diamonds` dataset that comes with `ggplot2`.
 
 ```{r,'Basic Data Summary'}
 
-library(ggplot2)
+require(ggplot2)
+require(gridExtra)
 diamonds<-diamonds
 summary(diamonds)
 colnames(diamonds)
 nrow(diamonds)
-data=diamonds[sample(1:nrow(diamonds),2000),]
+
+set.seed(56)
+data=diamonds[sample(1:nrow(diamonds),1000),]
 ```
 
-Plot 01
+
+Plots
 -------
-```{r,fig.width=10,fig.height=10,'Basic Scatter Plot'}
+
+####Plot 01####
+
+```{r,fig.width=13,fig.height=13,'Basic Scatter Plot'}
 
 p1=ggplot(data)+
   geom_point(aes(y=price,x=carat))+
-  ggtitle('Basic scatter plot on diamonds dataset: Price vs Carats')
+  ggtitle('p1: Basic scatter plot on diamonds dataset - Price vs Carats')
+
 p1
+
+```
+
+####Plot 02####
+
+```{r,fig.width=13,fig.height=13,'Scatter Plot: Color added'}
+
+p2=ggplot(data)+
+  geom_point(aes(y=price,x=carat,color=cut))+
+  ggtitle('p1: Scatter plot on diamonds dataset with colors by "cut"- Price vs Carats')
+
+p2
+
+```
+
+####Plot 03####
+
+```{r,fig.width=13,fig.height=13,'Scatter Plot: Shape added'}
+p3=ggplot(data)+
+  geom_point(aes(y=price,x=carat,color=cut,shape=cut))+
+  ggtitle('p3: Scatter plot with colour & Shape parameters')
+
+p3
+
+```
+
+####Plot 04####
+
+```{r,fig.width=13,fig.height=13,'Scatter Plot: Size added'}
+
+p4=ggplot(data)+
+  geom_point(aes(y=price,x=carat,color=cut,size=depth))+
+  ggtitle('p4: Scatter plot with colour & Size (by depth) parameters')
+
+p4
+```
+
+####Plot 05: Combined plots####
+
+```{r,fig.width=19,fig.height=20,'Combined Plots'}
+
+grid.arrange(p1,p2,p3,p4,ncol=2,main='Scatter Plots')
 
 ```
