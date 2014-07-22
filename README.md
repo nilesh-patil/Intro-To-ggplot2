@@ -6,12 +6,17 @@ This Repository is my attempt at creating a *how to* manual for `ggplot2` basics
 I'll try to move forward in *plot-focused* path for this tutorial.
 
 #Chapter 1#
+
 ##ggplot2##
 
-* Scatter Plots
+##### Scatter Plots #####
+
 a. Basic Scatter Plot
+
 b. Adding Colour,Shape & Size aesthetics
 
-* Line Charts
+##### Line Charts #####
+
 a. Line Plots
+
 b. Adding Colour 
