@@ -4,7 +4,7 @@ Basic Scatter Plot (*Nothing Fancy*)
 We'll be using the `diamonds` dataset that comes with `ggplot2`.
 
 ###Basic Data Summary###
-```{r,'Basic Data Summary'}
+```{r,'Basic Data Summary',R.options=list(width=160)}
 
 require(ggplot2)
 require(gridExtra)
@@ -71,5 +71,17 @@ p4
 ```{r,fig.width=19,fig.height=20,'Combined Plots'}
 
 grid.arrange(p1,p2,p3,p4,ncol=2,main='Scatter Plots')
+
+```
+
+
+####Plot 06: Adding Faceting grid####
+
+```{r,fig.width=13,fig.height=13,'Adding a variety of paramters',fig.width=20,fig.height=20}
+
+ggplot(data)+
+  geom_point(aes(x=carat,y=price,color=cut),alpha=0.7)+
+  facet_grid(facets=cut~clarity)+
+  ggtitle('More parameters added to the scatterplot')
 
 ```
