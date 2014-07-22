@@ -3,6 +3,7 @@ Basic Scatter Plot (*Nothing Fancy*)
 
 We'll be using the `diamonds` dataset that comes with `ggplot2`.
 
+###Basic Data Summary###
 ```{r,'Basic Data Summary'}
 
 require(ggplot2)
@@ -17,8 +18,7 @@ data=diamonds[sample(1:nrow(diamonds),1000),]
 ```
 
 
-Plots
--------
+###Plots###
 
 ####Plot 01####
 
