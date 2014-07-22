@@ -1,17 +1,10 @@
-Introduction to ggplot2 & gvis in R
-===================================
+Introduction to ggplot2 & ggvis in R
+====================================
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the **Help** toolbar button for more details on using R Markdown).
+This Repository is my attempt at creating a *how to* manual for `ggplot2` basics in `R` . Later on, I'll add `ggvis`(*definitely*) & `lattice`(*maybe*) basics too as I delve deeper into plotting & data representation in R.
 
-When you click the **Knit HTML** button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+I'll try to move forward in *plot-focused* path for this tutorial.
 
-```{r}
-summary(cars)
-```
-
-You can also embed plots, for example:
-
-```{r fig.width=7, fig.height=6}
-plot(cars)
-```
-
+#Chapter 1#
+##ggplot2##
++Scatter Plots
