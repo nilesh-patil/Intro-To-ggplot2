@@ -39,13 +39,13 @@ The `ggplot2` package by *Hadley Wickham* follows a layer by layer plot building
 
 Here:
 
-`data` is a sample of 2000 observations from diamonds dataset.
+*`data` is a sample of 2000 observations from diamonds dataset.
 
-The `null` plot is initialised by using `ggplot()`
+*The `null` plot is initialised by using `ggplot()`
 
-To create a scatterplot, we use `geom_point()` as geometry/layer
+*To create a scatterplot, we use `geom_point()` as geometry/layer
 
-To add plot title we use `ggtitle()`
+*To add plot title we use `ggtitle()`
 
 ```{r,fig.width=13,fig.height=13,'Basic Scatter Plot'}
 
