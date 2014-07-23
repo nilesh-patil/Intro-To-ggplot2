@@ -222,10 +222,9 @@ data=diamonds[sample(1:nrow(diamonds),2000),]
 
 <p><strong>The steps involved in creating a plot are as follows:</strong></p>
 
-<pre><code>+**Step 1:** Add dataset:         `ggplot(data)`
-+**Step 2:** Add geometry(layer): `geom_point(x,y)`
-+**Step 3:** Add Plot title/change axes scales/faceting
-</code></pre>
+<p>+<strong>Step 1:</strong> Add dataset:         <code>ggplot(data)</code>
+  +<strong>Step 2:</strong> Add geometry(layer): <code>geom_point(x,y)</code>
+  +<strong>Step 3:</strong> Add Plot title/change axes scales/faceting</p>
 
 <p>####Plot 01####</p>
 
@@ -233,13 +232,10 @@ data=diamonds[sample(1:nrow(diamonds),2000),]
 
 <p>Here:</p>
 
-<p>*<code>data</code> is a sample of 2000 observations from diamonds dataset.</p>
-
-<p>*The <code>null</code> plot is initialised by using <code>ggplot()</code></p>
-
-<p>*To create a scatterplot, we use <code>geom_point()</code> as geometry/layer</p>
-
-<p>*To add plot title we use <code>ggtitle()</code></p>
+<p>+<code>data</code> is a sample of 2000 observations from diamonds dataset.
++The <code>null</code> plot is initialised by using <code>ggplot()</code>
++To create a scatterplot, we use <code>geom_point()</code> as geometry/layer
++To add plot title we use <code>ggtitle()</code></p>
 
 <pre><code class="r">p1=ggplot(data)+ 
   geom_point(aes(y=price,x=carat))+
