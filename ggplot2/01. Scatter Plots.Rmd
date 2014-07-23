@@ -4,27 +4,45 @@ Basic Scatter Plot (*Nothing Very Fancy - yet*)
 We'll be using the `diamonds` dataset that comes with `ggplot2`.
 
 ###Basic Data Summary###
-```{r,'Basic Data Summary',R.options=list(width=160)}
+```{r,'Loading Required Packages',R.options=list(width=160),echo=FALSE}
 
 require(ggplot2)
 require(gridExtra)
+```
+
+```{r,'Basic Data Summary',R.options=list(width=160)}
+
 diamonds<-diamonds
 summary(diamonds)
 colnames(diamonds)
-nrow(diamonds)
-
 set.seed(56)
-data=diamonds[sample(1:nrow(diamonds),1000),]
+data=diamonds[sample(1:nrow(diamonds),2000),]
 ```
 
 
 ###Plots###
 
+The `ggplot2` package by *Hadley Wickham* follows a layer by layer plot building philosophy. In order to build a plot using `ggplot2` , the ideal way is to think in terms of plotting layers.
+
+The steps involved in creating a plot are as follows:
+
++**Step 1:** Add dataset:         `ggplot(data)`
++**Step 2:** Add geometry(layer): `geom_point(x,y)`
++**Step 3:** Add Plot title/change axes scales/faceting
+
 ####Plot 01####
+
+
+**Create a basic scatter plot:**
+Here:
+`data` is a sample of 2000 observations from diamonds dataset.
+The `null` plot is initialised by using `ggplot()`
+To create a scatterplot, we use `geom_point()` as geometry/layer.
+To add plot title we use `ggtitle()`
 
 ```{r,fig.width=13,fig.height=13,'Basic Scatter Plot'}
 
-p1=ggplot(data)+
+p1=ggplot(data)+ 
   geom_point(aes(y=price,x=carat))+
   ggtitle('p1: Basic scatter plot on diamonds dataset - Price vs Carats')
 
@@ -33,6 +51,8 @@ p1
 ```
 
 ####Plot 02####
+
+To create a scatter plot with colors according to a given factor variable, we use the `color` parameter. It takes in a factor (categorical) variable as input & colors the points according to the components of factor variable.
 
 ```{r,fig.width=13,fig.height=13,'Scatter Plot-Color added'}
 
@@ -43,6 +63,9 @@ p2=ggplot(data)+
 p2
 
 ```
+
+The above plot is exactly same as `p2=p1+geom_point(aes(x=carat,y=price,color=cut))`. If you already have a plot & intend to modify its one aspect using `ggplot2`, you can do it by using the `+` operator along with your plot's layer/geometry specification.
+
 
 ####Plot 03####
 
