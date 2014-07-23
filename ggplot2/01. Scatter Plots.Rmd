@@ -3,12 +3,14 @@ Basic Scatter Plot (*Nothing Very Fancy - yet*)
 
 We'll be using the `diamonds` dataset that comes with `ggplot2`.
 
-###Basic Data Summary###
+###Loading Required Packages###
 ```{r,'Loading Required Packages',R.options=list(width=160),echo=FALSE}
 
 require(ggplot2)
 require(gridExtra)
 ```
+
+###Basic Data Summary###
 
 ```{r,'Basic Data Summary',R.options=list(width=160)}
 
@@ -24,20 +26,25 @@ data=diamonds[sample(1:nrow(diamonds),2000),]
 
 The `ggplot2` package by *Hadley Wickham* follows a layer by layer plot building philosophy. In order to build a plot using `ggplot2` , the ideal way is to think in terms of plotting layers.
 
-The steps involved in creating a plot are as follows:
+**The steps involved in creating a plot are as follows:**
 
-+**Step 1:** Add dataset:         `ggplot(data)`
-+**Step 2:** Add geometry(layer): `geom_point(x,y)`
-+**Step 3:** Add Plot title/change axes scales/faceting
+    +**Step 1:** Add dataset:         `ggplot(data)`
+    +**Step 2:** Add geometry(layer): `geom_point(x,y)`
+    +**Step 3:** Add Plot title/change axes scales/faceting
 
 ####Plot 01####
 
 
 **Create a basic scatter plot:**
+
 Here:
+
 `data` is a sample of 2000 observations from diamonds dataset.
+
 The `null` plot is initialised by using `ggplot()`
-To create a scatterplot, we use `geom_point()` as geometry/layer.
+
+To create a scatterplot, we use `geom_point()` as geometry/layer
+
 To add plot title we use `ggtitle()`
 
 ```{r,fig.width=13,fig.height=13,'Basic Scatter Plot'}
