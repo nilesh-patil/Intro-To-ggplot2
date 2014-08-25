@@ -12,13 +12,13 @@ I'll try to move forward in *plot-focused* path for this tutorial.
 
 #####1. Scatter Plots#####
 
-[Tutorial Link] (https://github.com/nilesh-patil/Intro-To-ggplot2/blob/master/ggplot2/01.%20Scatter%20Plots.md)
+[Tutorial Link] (https://github.com/nilesh-patil/Intro-To-ggplot2/blob/master/ggplot2/01.Scatter Plots.md)
     
     a. Basic Scatter Plot
     
     b. Adding Colour,Shape & Size aesthetics
     
-######![Plot:](ggplot2/figure/Combined Plots.png)#####
+######![Plot:](https://github.com/nilesh-patil/Intro-To-ggplot2/blob/master/ggplot2/figure/Combined Plots.png)#####
 
 ##### 2. Line Charts #####
 
