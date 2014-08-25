@@ -18,7 +18,7 @@ I'll try to move forward in *plot-focused* path for this tutorial.
     
     b. Adding Colour,Shape & Size aesthetics
     
-######![Plot:](https://github.com/nilesh-patil/Intro-To-ggplot2/blob/master/ggplot2/figure/Combined Plots.png)#####
+######![Plot:](images/Combined Plots.png)#####
 
 ##### 2. Line Charts #####
 
