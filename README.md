@@ -7,12 +7,10 @@ I'll try to move forward in *plot-focused* path for this tutorial.
 
 #Chapter 1#
 
-##[`ggplot2`: Website]  (http://ggplot2.org)##
-##[`ggplot2`: Tutorial] (http://nilesh-patil.github.io/Intro-To-ggplot2)##
+###`ggplot2`###
+[`ggplot2`: Website]  (http://ggplot2.org) | [`ggplot2`: Tutorial] (http://nilesh-patil.github.io/Intro-To-ggplot2)
 
-#####1. Scatter Plots#####
-
-[Tutorial Link] (https://github.com/nilesh-patil/Intro-To-ggplot2/blob/master/ggplot2/01.Scatter Plots.md)
+#####1. Scatter Plots [Tutorial Link](https://github.com/nilesh-patil/Intro-To-ggplot2/blob/master/ggplot2/01.%20Scatter%20Plots.md)
     
     a. Basic Scatter Plot
     
