@@ -16,7 +16,7 @@ I'll try to move forward in *plot-focused* path for this tutorial.
     
     b. Adding Colour,Shape & Size aesthetics
     
-######![Plot:](images/Combined Plots.png)#####
+![Plot:](images/CombinedPlots.png)
 
 ##### 2. Line Charts #####
 
